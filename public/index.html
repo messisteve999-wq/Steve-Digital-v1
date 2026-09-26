@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Warrior King - création d'affiches, sites web, serveurs, boutiques et solutions numériques.">
+  <title>Warrior King — Solutions numériques</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <header class="header">
+    <a class="brand" href="#accueil" aria-label="Warrior King">
+      <span class="crown">♛</span>
+      <span>
+        <strong>WARRIOR KING</strong>
+        <small>Vos idées, notre puissance</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">☰</button>
+
+    <nav id="mainNav">
+      <a href="#accueil">Accueil</a>
+      <a href="#services">Services</a>
+      <a href="#licences">Licences</a>
+      <a href="#apropos">À propos</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-order" href="#commande">Commander</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="accueil" class="hero">
+      <div class="hero-content">
+        <div class="hero-logo"><span>♛</span> WARRIOR <b>KING</b></div>
+        <h1>Donnez vie à vos idées</h1>
+        <p>
+          Création d’affiches, sites web, serveurs, boutiques en ligne et
+          solutions numériques. Warrior King vous accompagne dans vos projets.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#services">🚀 Nos services</a>
+          <a class="btn secondary" href="#commande">Commander</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="section-heading">
+        <span>♛</span>
+        <h2>Nos services</h2>
+        <p>Des solutions numériques pour développer vos projets.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="icon blue">✦</div>
+          <h3>Création d’affiches</h3>
+          <p>Affiches publicitaires, événements, commerces et réseaux sociaux.</p>
+          <button onclick="openOrder('Création d’affiches')">Commander →</button>
+        </article>
+
+        <article class="service-card">
+          <div class="icon cyan">◎</div>
+          <h3>Création de sites web</h3>
+          <p>Sites vitrines, boutiques en ligne, portfolios et sites professionnels.</p>
+          <button onclick="openOrder('Création de sites web')">Commander →</button>
+        </article>
+
+        <article class="service-card">
+          <div class="icon green">▣</div>
+          <h3>Création de serveurs</h3>
+          <p>Serveurs web, API, bases de données et serveurs pour applications.</p>
+          <button onclick="openOrder('Création de serveurs')">Commander →</button>
+        </article>
+
+        <article class="service-card">
+          <div class="icon gold">🛒</div>
+          <h3>Boutiques en ligne</h3>
+          <p>Catalogue, commandes, espace client et solutions e-commerce.</p>
+          <button onclick="openOrder('Boutique en ligne')">Commander →</button>
+        </article>
+
+        <article class="service-card">
+          <div class="icon pink">▱</div>
+          <h3>Applications & solutions</h3>
+          <p>Applications mobiles, logiciels et solutions numériques sur mesure.</p>
+          <button onclick="openOrder('Applications & solutions numériques')">Commander →</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="licences" class="section compact">
+      <div class="section-heading">
+        <span>▤</span>
+        <h2>Licences du logiciel</h2>
+        <p>Informations sur les licences et l’utilisation de nos solutions.</p>
+      </div>
+      <div class="info-panel">
+        <h3>Licence Warrior King</h3>
+        <p>
+          Les modalités de licence, d’utilisation et de maintenance peuvent
+          être définies selon la solution commandée. Contactez-nous pour
+          connaître les conditions adaptées à votre projet.
+        </p>
+        <a class="btn primary" href="#commande">Demander une licence</a>
+      </div>
+    </section>
+
+    <section id="commande" class="section compact">
+      <div class="section-heading">
+        <span>✉</span>
+        <h2>Commander</h2>
+        <p>Décrivez votre projet. Votre demande sera préparée pour WhatsApp.</p>
+      </div>
+
+      <form id="orderForm" class="order-form">
+        <label>
+          Votre nom
+          <input id="name" name="name" type="text" placeholder="Votre nom" required>
+        </label>
+
+        <label>
+          Service
+          <select id="service" name="service" required>
+            <option value="">Choisir un service</option>
+            <option>Création d’affiches</option>
+            <option>Création de sites web</option>
+            <option>Création de serveurs</option>
+            <option>Boutique en ligne</option>
+            <option>Applications & solutions numériques</option>
+            <option>Licence du logiciel</option>
+          </select>
+        </label>
+
+        <label>
+          Description du projet
+          <textarea id="details" name="details" rows="5" placeholder="Décrivez brièvement votre projet..." required></textarea>
+        </label>
+
+        <label>
+          Budget indicatif (facultatif)
+          <input id="budget" name="budget" type="text" placeholder="Ex. 50 000 FCFA">
+        </label>
+
+        <button class="btn whatsapp" type="submit">📲 Envoyer la commande sur WhatsApp</button>
+        <p class="form-note">WhatsApp Business : +237 677 045 467</p>
+      </form>
+    </section>
+
+    <section id="apropos" class="section compact">
+      <div class="section-heading">
+        <span>♛</span>
+        <h2>À propos de Warrior King</h2>
+      </div>
+      <div class="info-panel">
+        <p>
+          Warrior King est une plateforme dédiée à la création numérique :
+          affiches, sites web, serveurs, boutiques et solutions personnalisées.
+          Notre objectif est de transformer vos idées en projets numériques.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer">
+    <div>
+      <strong>WARRIOR KING</strong>
+      <span>Ensemble vers un avenir numérique meilleur.</span>
+    </div>
+    <div>
+      <strong>WhatsApp Business</strong>
+      <a href="https://wa.me/237677045467" target="_blank" rel="noopener">+237 677 045 467</a>
+    </div>
+  </footer>
+
+  <div class="modal" id="orderModal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose" aria-label="Fermer">×</button>
+      <h2>Commander</h2>
+      <p>Service sélectionné : <strong id="selectedService"></strong></p>
+      <button class="btn primary" id="modalOrder">Continuer vers WhatsApp</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
