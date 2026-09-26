@@ -1,7 +1,7 @@
 {
   "name": "warrior-king",
   "version": "1.0.0",
-  "description": "Warrior King - services numériques",
+  "description": "Warrior King services numériques",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
