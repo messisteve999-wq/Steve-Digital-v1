@@ -1,0 +1,11 @@
+{
+  "name": "Warrior King",
+  "short_name": "Warrior King",
+  "description": "Warrior King - Services et solutions numériques",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#010c1f",
+  "theme_color": "#010c1f",
+  "orientation": "portrait",
+  "icons": []
+}
