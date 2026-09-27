@@ -2,200 +2,84 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
-  >
-
-  <meta
-    name="description"
-    content="Warrior King - Création d'affiches, sites web, serveurs, boutiques en ligne et solutions numériques."
-  >
-
-  <meta name="theme-color" content="#06152f">
-
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta
-    name="apple-mobile-web-app-status-bar-style"
-    content="black-translucent"
-  >
-  <meta
-    name="apple-mobile-web-app-title"
-    content="Warrior King"
-  >
-
-  <title>Warrior King — Solutions numériques</title>
-
-  <link rel="stylesheet" href="style.css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050816">
+  <meta name="description" content="Steve Digital - Création d'affiches, sites web, serveurs et maintenance logicielle.">
   <link rel="manifest" href="manifest.json">
-
-  <link
-    rel="apple-touch-icon"
-    href="warrior-king-bg.png"
-  >
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <title>Steve Digital | Services numériques</title>
 </head>
-
 <body>
-
-  <!-- Fond / overlay -->
-  <div class="overlay"></div>
-
-  <!-- ================= HEADER ================= -->
-  <header class="header">
-
-    <a class="brand" href="#accueil" aria-label="Warrior King">
-      <span class="crown">♛</span>
-
-      <span>
-        <strong>WARRIOR KING</strong>
-        <small>Vos idées, notre puissance</small>
-      </span>
-    </a>
-
-    <button
-      class="menu-toggle"
-      id="menuToggle"
-      type="button"
-      aria-label="Ouvrir le menu"
-      aria-expanded="false"
-    >
-      ☰
-    </button>
-
-    <nav class="nav" id="mainNav" aria-label="Navigation principale">
-
-      <a href="#accueil">Accueil</a>
-
-      <a href="#services">Services</a>
-
-      <a href="#licences">Licences</a>
-
-      <a href="#contact">Contact</a>
-
-      <a class="nav-order" href="#commande">
-        Commander
-      </a>
-
+  <header class="hero">
+    <nav class="navbar">
+      <a class="logo" href="#accueil">STEVE<span>DIGITAL</span></a>
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
     </nav>
 
+    <div class="hero-content" id="accueil">
+      <p class="eyebrow">SOLUTIONS NUMÉRIQUES</p>
+      <h1>Steve Digital</h1>
+      <p class="hero-text">
+        Création graphique, développement web, serveurs et maintenance
+        logicielle adaptés à vos besoins.
+      </p>
+      <a class="btn" href="#services">Découvrir les services</a>
+    </div>
   </header>
 
-
   <main>
-
-    <!-- ================= ACCUEIL ================= -->
-    <section
-      id="accueil"
-      class="hero"
-      aria-labelledby="hero-title"
-    >
-
-      <div class="hero-content">
-
-        <div class="hero-logo" aria-label="Warrior King">
-          ♛ WARRIOR <b>KING</b>
-        </div>
-
-        <h1 id="hero-title">
-          Donnez vie à vos idées
-        </h1>
-
-        <p>
-          Création d'affiches, sites web, serveurs,
-          boutiques en ligne et solutions numériques.
-          Warrior King vous accompagne dans vos projets.
-        </p>
-
-        <div class="hero-actions">
-
-          <a
-            class="btn primary"
-            href="#services"
-          >
-            Voir nos services
-          </a>
-
-          <a
-            class="btn secondary"
-            href="#commande"
-          >
-            Commander
-          </a>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- ================= SERVICES ================= -->
-    <section
-      id="services"
-      class="section"
-      aria-labelledby="services-title"
-    >
-
-      <div class="section-heading">
-
-        <span class="section-line"></span>
-
-        <h2 id="services-title">
-          Nos services
-        </h2>
-
-        <p>
-          Des solutions numériques pour développer
-          vos projets.
-        </p>
-
-      </div>
-
+    <section class="section" id="services">
+      <p class="section-label">NOS SERVICES</p>
+      <h2>Des solutions numériques simples et professionnelles</h2>
 
       <div class="services-grid">
-
-        <!-- Service 1 -->
         <article class="service-card">
-
-          <div
-            class="icon blue"
-            aria-hidden="true"
-          >
-            🎨
-          </div>
-
-          <h3>
-            Création d'affiches
-          </h3>
-
-          <p>
-            Affiches publicitaires, événements,
-            commerces et réseaux sociaux.
-          </p>
-
-          <button
-            class="btn primary"
-            type="button"
-            onclick="openOrder('Création d’affiches')"
-          >
-            Commander
-          </button>
-
+          <div class="service-icon">🎨</div>
+          <h3>Création d'affiches</h3>
+          <p>Affiches publicitaires, événements, promotions, annonces et autres supports graphiques.</p>
+          <strong>1 000 – 2 000 FCFA</strong>
         </article>
 
-
-        <!-- Service 2 -->
         <article class="service-card">
+          <div class="service-icon">💻</div>
+          <h3>Création de sites web</h3>
+          <p>Sites vitrines, sites professionnels, pages de présentation et solutions web personnalisées.</p>
+          <strong>40 000 – 60 000 FCFA</strong>
+        </article>
 
-          <div
-            class="icon cyan"
-            aria-hidden="true"
-          >
-            💻
-          </div>
+        <article class="service-card">
+          <div class="service-icon">🖥️</div>
+          <h3>Création de serveurs</h3>
+          <p>Mise en place de différents types de serveurs selon les besoins de votre projet.</p>
+          <strong>30 000 – 50 000 FCFA</strong>
+        </article>
 
-          <h3>
-            Création de sites web
-          </h3>
+        <article class="service-card">
+          <div class="service-icon">🛠️</div>
+          <h3>Maintenance logicielle</h3>
+          <p>Correction de problèmes, entretien, mises à jour et amélioration de logiciels et projets web.</p>
+          <strong>5 000 – 10 000 FCFA</strong>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <p class="section-label">CONTACT</p>
+      <h2>Un projet ? Parlons-en.</h2>
+      <p>Contactez Steve Digital pour demander un devis ou présenter votre projet.</p>
+      <a class="phone" href="tel:+237677045467">📞 +237 677 045 467</a>
+      <a class="btn" href="https://wa.me/237677045467" target="_blank" rel="noopener">Écrire sur WhatsApp</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Steve Digital — Tous droits réservés.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

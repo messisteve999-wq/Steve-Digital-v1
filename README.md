@@ -1,30 +1,22 @@
-# WARRIOR KING — V1
+# Steve Digital v1.3
 
-## Installation dans Termux
+Version rebrandée de Warrior King vers **Steve Digital**.
 
-1. Décompressez le ZIP.
-2. Entrez dans le dossier :
-   cd ~/warrior_king
-3. Installez les dépendances :
-   npm install
-4. Lancez le site :
-   npm start
-5. Ouvrez dans le navigateur :
-   http://localhost:3000
+## Services
 
-## WhatsApp Business
+- Création d'affiches : 1 000 – 2 000 FCFA
+- Création de sites web : 40 000 – 60 000 FCFA
+- Création de serveurs : 30 000 – 50 000 FCFA
+- Maintenance logicielle : 5 000 – 10 000 FCFA
 
-Les commandes sont envoyées vers :
+## Contact
+
 +237 677 045 467
 
-## Structure
+## Modifications v1.3
 
-warrior_king/
-├── package.json
-├── server.js
-├── README.md
-└── public/
-    ├── index.html
-    ├── style.css
-    ├── app.js
-    └── warrior-king-bg.png
+- Nouveau nom : Steve Digital
+- Boutique supprimée
+- Fond spatial/ciel de l'univers en CSS
+- PWA incluse
+- Service Worker versionné en v1.3

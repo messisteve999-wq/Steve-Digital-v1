@@ -1,20 +1,17 @@
-const CACHE_NAME = "warrior-king-v1";
-
-const FILES_TO_CACHE = [
-  "/",
-  "/index.html",
-  "/style.css",
-  "/app.js",
-  "/manifest.json",
-  "/warrior-king-bg.png"
+const CACHE_NAME = "steve-digital-v1.3";
+const FILES = [
+  "./",
+  "./index.html",
+  "./style.css",
+  "./app.js",
+  "./manifest.json",
+  "./icon.svg"
 ];
 
 self.addEventListener("install", event => {
   event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then(cache => cache.addAll(FILES_TO_CACHE))
+    caches.open(CACHE_NAME).then(cache => cache.addAll(FILES))
   );
-
   self.skipWaiting();
 });
 
@@ -22,21 +19,16 @@ self.addEventListener("activate", event => {
   event.waitUntil(
     caches.keys().then(keys =>
       Promise.all(
-        keys
-          .filter(key => key !== CACHE_NAME)
+        keys.filter(key => key !== CACHE_NAME)
           .map(key => caches.delete(key))
       )
     )
   );
-
   self.clients.claim();
 });
 
 self.addEventListener("fetch", event => {
   event.respondWith(
-    caches.match(event.request)
-      .then(cachedResponse => {
-        return cachedResponse || fetch(event.request);
-      })
+    caches.match(event.request).then(cached => cached || fetch(event.request))
   );
 });
