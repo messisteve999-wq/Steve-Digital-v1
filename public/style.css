@@ -56,9 +56,30 @@ nav a:hover { color:#4bb3ff; }
   grid-template-columns:repeat(5,1fr); gap:16px;
 }
 .service-card {
-  background:rgba(1,12,31,.86); border:1px solid rgba(55,160,255,.45);
-  border-radius:16px; padding:25px 18px; text-align:center;
-  box-shadow:0 15px 40px rgba(0,0,0,.25);
+  background: rgba(1, 12, 31, 0.86);
+  border: 1px solid rgba(55, 160, 255, 0.35);
+  border-radius: 16px;
+  padding: 25px 18px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+.service-card h3 {
+  min-height: 48px;
+}
+
+.service-card p {
+  color: #d3d9e4;
+  line-height: 1.5;
+  min-height: 70px;
+}
+
+.service-card button {
+  border: 0;
+  background: none;
+  color: #45b4ff;
+  font-weight: 800;
+  cursor: pointer;
 }
 .service-card h3 { min-height:48px; }
 .service-card p { color:#d3d9e4; line-height:1.5; min-height:70px; }
