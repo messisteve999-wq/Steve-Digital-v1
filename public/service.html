@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#050914"><link rel="manifest" href="manifest.json"><link rel="stylesheet" href="style.css">
+<title>Commande — Steve Digital V2</title></head><body>
+<header class="mini-header"><a class="brand" href="index.html"><img src="assets/steve-digital-logo.png" alt=""><span>STEVE DIGITAL <b>V2</b></span></a><a href="index.html#services">← Retour</a></header>
+<main class="detail"><div id="detail"></div></main>
+<script>
+const WA="237677045467";
+const data={
+"affiches-publicitaires":["Création d'affiches publicitaires","🖼️","Affiches publicitaires","Affiche promotionnelle|Affiche commerciale|Affiche de produit|Affiche de marque|Affiche spéciale"],
+"affiches-evenementielles":["Affiches événementielles","🎟️","Affiche événement","Concert|Festival|Conférence|Soirée|Cérémonie"],
+"annonces-publicitaires":["Annonces publicitaires","📢","Annonce publicitaire","Promotion|Recrutement|Vente|Offre spéciale|Annonce locale"],
+"support-graphique":["Support graphique","🎨","Support graphique","Logo|Carte de visite|Flyer|Bannière|Identité visuelle"],
+"cellules-animees":["Cellules animées","🎬","Cellule animée","Personnage|Storytelling|Présentation|Publicité animée|Vidéo courte"],
+"sites-web":["Création de sites web","🌐","Site web","Site vitrine|Portfolio|Page entreprise|Landing page|Blog"],
+"serveurs":["Création de serveurs","🖥️","Serveur","Serveur web|API|Base de données|Cloud|Serveur applicatif"],
+"applications-mobiles":["Création d'applications mobiles","📱","Application mobile","Application métier|E-commerce|Gestion|Service client|Application personnalisée"]
+};
+const key=new URLSearchParams(location.search).get("service")||"affiches-publicitaires";
+const d=data[key]||data["affiches-publicitaires"];
+const examples=d[3].split("|");
+document.querySelector("#detail").innerHTML=`
+<p class="section-label">${d[1]} STEVE DIGITAL</p><h1>${d[0]}</h1><p class="lead">${d[2]} conçue selon votre besoin.</p>
+<div class="example-grid">${examples.map((x,i)=>`<div class="example-card"><div class="example-image">${d[1]}<small>EXEMPLE ${i+1}</small></div><b>${x}</b><button onclick="document.querySelector('#name').focus()">Commandée</button></div>`).join("")}</div>
+<section class="order-panel"><h2>Commander : ${d[0]}</h2><form id="form"><label>Votre nom complet<input id="name" required placeholder="Ex : Jean Dupont"></label><label>Description de votre activité<textarea id="activity" required placeholder="Décrivez votre activité et votre besoin"></textarea></label><button class="wa-submit">💬 Envoyer sur WhatsApp</button></form></section>`;
+document.querySelector("#form").addEventListener("submit",e=>{
+ e.preventDefault();
+ const name=document.querySelector("#name").value.trim(), activity=document.querySelector("#activity").value.trim();
+ const msg=`Bonjour Steve Digital, je souhaite commander : ${d[0]}.%0A%0ANom : ${encodeURIComponent(name)}%0ADescription de mon activité : ${encodeURIComponent(activity)}`;
+ location.href=`https://wa.me/${WA}?text=${msg}`;
+});
+</script></body></html>

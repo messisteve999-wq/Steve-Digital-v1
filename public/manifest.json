@@ -1,3 +1,12 @@
 {
-  "name":"Steve Digital v1.2","short_name":"Steve Digital","description":"Steve Digital - Services et solutions numériques","start_url":"./","scope":"./","display":"standalone","background_color":"#071126","theme_color":"#071126","lang":"fr","icons":[{"src":"assets/steve-digital-logo.png","sizes":"1024x1024","type":"image/png","purpose":"any maskable"}]
+  "name":"Steve Digital V2",
+  "short_name":"Steve Digital",
+  "description":"Solutions numériques sur mesure",
+  "start_url":"./",
+  "scope":"./",
+  "display":"standalone",
+  "background_color":"#030713",
+  "theme_color":"#050914",
+  "lang":"fr",
+  "icons":[{"src":"assets/steve-digital-logo.png","sizes":"1024x1024","type":"image/png","purpose":"any maskable"}]
 }
