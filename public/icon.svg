@@ -1,1 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><defs><linearGradient id="g"><stop stop-color="#fff3a1"/><stop offset=".5" stop-color="#e0a000"/><stop offset="1" stop-color="#fff08a"/></linearGradient></defs><rect width="512" height="512" rx="110" fill="#03060d"/><circle cx="256" cy="256" r="220" fill="#08245a" stroke="url(#g)" stroke-width="10"/><path d="M150 145 178 78l38 42 40-62 40 62 38-42 28 67-18 28H168z" fill="url(#g)"/><text x="256" y="315" text-anchor="middle" font-family="Arial" font-size="150" font-weight="900" fill="url(#g)">SD</text><text x="256" y="410" text-anchor="middle" font-family="Arial" font-size="42" font-weight="900" fill="white">STEVE</text><text x="256" y="455" text-anchor="middle" font-family="Arial" font-size="27" font-weight="700" letter-spacing="7" fill="white">DIGITAL</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="110" fill="#050816"/>
+  <circle cx="256" cy="256" r="180" fill="#172c68"/>
+  <text x="256" y="300" text-anchor="middle" font-family="Arial" font-size="150" font-weight="900" fill="white">SD</text>
+</svg>
