@@ -581,3 +581,6 @@ footer p {
   }
 
 }
+git add public/index.html public/style.css
+git commit -m "Ajouter commandes et formulaire WhatsApp"
+git push origin main

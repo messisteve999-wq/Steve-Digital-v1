@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="theme-color"
+    content="#0f172a"
+  >
+
+  <meta
+    name="description"
+    content="Steve Digital - Solutions numériques, création d'affiches, sites web, serveurs et maintenance logicielle."
+  >
+
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/style.css">
+
+  <title>Steve Digital | Solutions numériques</title>
+</head>
+
+<body>
+
+  <!-- =========================
+       NAVIGATION
+  ========================== -->
+
+  <header class="topbar">
+
+    <div class="container nav-container">
+
+      <a href="#" class="brand">
+        <span class="brand-mark">SD</span>
+
+        <span class="brand-text">
+          <strong>Steve Digital</strong>
+          <small>Solutions numériques</small>
+        </span>
+      </a>
+
+
+      <nav class="navigation">
+
+        <a href="#accueil">Accueil</a>
+        <a href="#services">Services</a>
+        <a href="#apropos">À propos</a>
+        <a href="#commande">Commander</a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section id="accueil" class="hero">
+
+      <div class="container hero-container">
+
+        <div class="hero-content">
+
+          <span class="hero-badge">
+            🚀 Votre projet, notre expertise
+          </span>
+
+          <h1>
+            Donnons vie à vos
+            <span>projets numériques.</span>
+          </h1>
+
+          <p>
+            Steve Digital vous accompagne dans la création
+            d'affiches, de sites web, de serveurs et dans
+            la maintenance de vos solutions logicielles.
+          </p>
+
+
+          <div class="hero-actions">
+
+            <a
+              href="#services"
+              class="btn btn-primary"
+            >
+              Découvrir nos services
+            </a>
+
+            <a
+              href="#commande"
+              class="btn btn-outline"
+            >
+              Commander maintenant
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="hero-card">
+
+          <div class="hero-card-icon">
+            💻
+          </div>
+
+          <h2>
+            Steve Digital
+          </h2>
+
+          <p>
+            Des solutions simples, modernes
+            et adaptées à vos besoins.
+          </p>
+
+          <div class="hero-stat">
+
+            <div>
+              <strong>4</strong>
+              <span>Services</span>
+            </div>
+
+            <div>
+              <strong>100%</strong>
+              <span>Digital</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         SERVICES
+    ========================== -->
+
+    <section
+      id="services"
+      class="services-section"
+    >
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="section-label">
+            NOS SERVICES
+          </span>
+
+          <h2>
+            Des solutions pour vos projets
+          </h2>
+
+          <p>
+            Choisissez le service dont vous avez besoin
+            et décrivez-nous votre projet.
+          </p>
+
+        </div>
+
+
+        <div class="services-grid">
+
+
+          <!-- SERVICE 1 -->
+
+          <article class="service-card">
+
+            <div class="service-top">
+
+              <div class="service-icon">
+                🎨
+              </div>
+
+              <span class="service-number">
+                01
+              </span>
+
+            </div>
+
+            <h3>
+              Création d'affiches
+            </h3>
+
+            <p>
+              Affiches publicitaires, événements,
+              promotions, réseaux sociaux et
+              communication professionnelle.
+            </p>
+
+            <div class="service-bottom">
+
+              <strong class="price">
+                1 000 - 2 000 FCFA
+              </strong>
+
+              <button
+                type="button"
+                class="order-button"
+                data-service="Création d'affiches"
+              >
+                COMMANDER →
+              </button>
+
+            </div>
+
+          </article>
+
+
+          <!-- SERVICE 2 -->
+
+          <article class="service-card">
+
+            <div class="service-top">
+
+              <div class="service-icon">
+                🌐
+              </div>
+
+              <span class="service-number">
+                02
+              </span>
+
+            </div>
+
+            <h3>
+              Création de sites web
+            </h3>
+
+            <p>
+              Sites web modernes, responsives et
+              adaptés aux particuliers, entreprises
+              et projets professionnels.
+            </p>
+
+            <div class="service-bottom">
+
+              <strong class="price">
+                40 000 - 60 000 FCFA
+              </strong>
+
+              <button
+                type="button"
+                class="order-button"
+                data-service="Création de sites web"
+              >
+                COMMANDER →
+              </button>
+
+            </div>
+
+          </article>
+
+
+          <!-- SERVICE 3 -->
+
+          <article class="service-card">
+
+            <div class="service-top">
+
+              <div class="service-icon">
+                🖥️
+              </div>
+
+              <span class="service-number">
+                03
+              </span>
+
+            </div>
+
+            <h3>
+              Création de serveurs
+            </h3>
+
+            <p>
+              Installation, configuration et
+              mise en place de différents types
+              de serveurs pour vos projets.
+            </p>
+
+            <div class="service-bottom">
+
+              <strong class="price">
+                30 000 - 50 000 FCFA
+              </strong>
+
+              <button
+                type="button"
+                class="order-button"
+                data-service="Création de serveurs"
+              >
+                COMMANDER →
+              </button>
+
+            </div>
+
+          </article>
+
+
+          <!-- SERVICE 4 -->
+
+          <article class="service-card">
+
+            <div class="service-top">
+
+              <div class="service-icon">
+                🔧
+              </div>
+
+              <span class="service-number">
+                04
+              </span>
+
+            </div>
+
+            <h3>
+              Maintenance logicielle
+            </h3>
+
+            <p>
+              Correction des problèmes, maintenance,
+              optimisation et amélioration de vos
+              logiciels et applications.
+            </p>
+
+            <div class="service-bottom">
+
+              <strong class="price">
+                5 000 - 10 000 FCFA
+              </strong>
+
+              <button
+                type="button"
+                class="order-button"
+                data-service="Maintenance logicielle"
+              >
+                COMMANDER →
+              </button>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         A PROPOS
+    ========================== -->
+
+    <section
+      id="apropos"
+      class="about-section"
+    >
+
+      <div class="container about-container">
+
+        <div class="about-visual">
+
+          <div class="about-logo">
+            SD
+          </div>
+
+          <div class="about-circle circle-one"></div>
+          <div class="about-circle circle-two"></div>
+
+        </div>
+
+
+        <div class="about-content">
+
+          <span class="section-label">
+            À PROPOS DE STEVE DIGITAL
+          </span>
+
+          <h2>
+            Une approche simple pour
+            vos projets numériques.
+          </h2>
+
+          <p>
+            Steve Digital propose des services numériques
+            accessibles pour accompagner les particuliers,
+            entrepreneurs et entreprises dans leurs projets.
+          </p>
+
+          <p>
+            Notre objectif est de transformer vos idées
+            en solutions numériques pratiques, modernes
+            et adaptées à vos besoins.
+          </p>
+
+
+          <div class="advantages">
+
+            <div class="advantage">
+              <span>✓</span>
+              <div>
+                <strong>Solutions personnalisées</strong>
+                <small>
+                  Des services adaptés à chaque projet.
+                </small>
+              </div>
+            </div>
+
+            <div class="advantage">
+              <span>✓</span>
+              <div>
+                <strong>Design moderne</strong>
+                <small>
+                  Des créations pensées pour le mobile.
+                </small>
+              </div>
+            </div>
+
+            <div class="advantage">
+              <span>✓</span>
+              <div>
+                <strong>Contact direct</strong>
+                <small>
+                  Échangez directement avec nous sur WhatsApp.
+                </small>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         COMMANDE
+    ========================== -->
+
+    <section
+      id="commande"
+      class="contact-section"
+    >
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="section-label">
+            VOTRE PROJET
+          </span>
+
+          <h2>
+            Parlons de votre projet
+          </h2>
+
+          <p>
+            Remplissez le formulaire et envoyez-nous
+            directement votre demande sur WhatsApp.
+          </p>
+
+        </div>
+
+
+        <div class="form-card">
+
+          <form id="serviceForm">
+
+            <div class="form-group">
+
+              <label for="service">
+                Nom du service
+              </label>
+
+              <select
+                id="service"
+                name="service"
+                required
+              >
+
+                <option value="">
+                  -- Choisissez un service --
+                </option>
+
+                <option value="Création d'affiches">
+                  Création d'affiches — 1 000 à 2 000 FCFA
+                </option>
+
+                <option value="Création de sites web">
+                  Création de sites web — 40 000 à 60 000 FCFA
+                </option>
+
+                <option value="Création de serveurs">
+                  Création de serveurs — 30 000 à 50 000 FCFA
+                </option>
+
+                <option value="Maintenance logicielle">
+                  Maintenance logicielle — 5 000 à 10 000 FCFA
+                </option>
+
+              </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="description">
+                Description du projet
+              </label>
+
+              <textarea
+                id="description"
+                name="description"
+                rows="7"
+                placeholder="Expliquez-nous votre projet, vos besoins et les informations importantes..."
+                required
+              ></textarea>
+
+            </div>
+
+
+            <button
+              type="submit"
+              class="whatsapp-button"
+            >
+              📱 ENVOYER MA DEMANDE SUR WHATSAPP
+            </button>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+
+    <section class="contact-info">
+
+      <div class="container">
+
+        <span class="section-label light">
+          CONTACT
+        </span>
+
+        <h2>
+          Un projet en tête ?
+        </h2>
+
+        <p>
+          Contactez Steve Digital directement
+          pour discuter de votre projet.
+        </p>
+
+        <a
+          href="https://wa.me/2376770454567"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="whatsapp-link"
+        >
+          💬 CONTACTER SUR WHATSAPP
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer>
+
+    <div class="container footer-container">
+
+      <div>
+        <strong>
+          Steve Digital
+        </strong>
+
+        <p>
+          Solutions numériques pour vos projets.
+        </p>
+      </div>
+
+      <p>
+        © <span id="year"></span>
+        Steve Digital.
+        Tous droits réservés.
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =========================
+       JAVASCRIPT
+  ========================== -->
+
+  <script>
+
+    /* Année */
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+
+    /* Boutons COMMANDER */
+
+    const orderButtons =
+      document.querySelectorAll(".order-button");
+
+    const serviceSelect =
+      document.getElementById("service");
+
+    const commandeSection =
+      document.getElementById("commande");
+
+
+    orderButtons.forEach(function(button) {
+
+      button.addEventListener("click", function() {
+
+        const selectedService =
+          button.getAttribute("data-service");
+
+        serviceSelect.value =
+          selectedService;
+
+        commandeSection.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+
+      });
+
+    });
+
+
+    /* Formulaire WhatsApp */
+
+    document
+      .getElementById("serviceForm")
+      .addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        const service =
+          document
+            .getElementById("service")
+            .value
+            .trim();
+
+        const description =
+          document
+            .getElementById("description")
+            .value
+            .trim();
+
+
+        if (!service) {
+
+          alert(
+            "Veuillez choisir un service."
+          );
+
+          return;
+        }
+
+
+        if (!description) {
+
+          alert(
+            "Veuillez décrire votre projet."
+          );
+
+          return;
+        }
+
+
+        const message =
+`Bonjour Steve Digital 👋
+
+Je souhaite commander un service.
+
+🔹 SERVICE :
+${service}
+
+🔹 DESCRIPTION DU PROJET :
+${description}
+
+Merci de me contacter pour discuter de mon projet.`;
+
+
+        const whatsappUrl =
+          "https://wa.me/2376770454567?text=" +
+          encodeURIComponent(message);
+
+
+        window.location.href =
+          whatsappUrl;
+
+      });
+
+
+    /* Service Worker PWA */
+
+    if ("serviceWorker" in navigator) {
+
+      window.addEventListener(
+        "load",
+        function() {
+
+          navigator.serviceWorker
+            .register("/sw.js")
+            .then(function() {
+
+              console.log(
+                "Steve Digital : PWA active."
+              );
+
+            })
+            .catch(function(error) {
+
+              console.log(
+                "Erreur PWA :",
+                error
+              );
+
+            });
+
+        }
+      );
+
+    }
+
+  </script>
+
+</body>
+</html>

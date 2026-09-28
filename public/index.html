@@ -15,114 +15,216 @@
 
 <body>
 
+  <!-- =========================
+       ACCUEIL
+  ========================== -->
   <header class="hero">
     <div class="hero-content">
       <h1>Steve Digital</h1>
-      <p>Solutions numériques adaptées à vos projets</p>
 
-      <a href="#commande" class="btn">
-        Demander un service
+      <p>
+        Création numérique, sites web, serveurs et maintenance logicielle.
+      </p>
+
+      <a href="#services" class="btn">
+        Découvrir nos services
       </a>
     </div>
   </header>
 
+
   <main>
 
-    <!-- SERVICES -->
+    <!-- =========================
+         SERVICES
+    ========================== -->
     <section id="services" class="services-section">
+
       <div class="container">
 
         <h2>Nos services</h2>
+
         <p class="section-intro">
-          Nous vous accompagnons dans la création et la maintenance de vos solutions numériques.
+          Choisissez le service qui correspond à votre projet.
         </p>
+
 
         <div class="services-grid">
 
+          <!-- AFFICHES -->
           <article class="service-card">
+
             <div class="service-icon">🎨</div>
+
             <h3>Création d'affiches</h3>
+
             <p>
-              Création d'affiches publicitaires, événements, promotions,
-              réseaux sociaux et communication professionnelle.
+              Création d'affiches publicitaires, événementielles,
+              promotionnelles et pour les réseaux sociaux.
             </p>
-            <strong>1 000 - 2 000 FCFA</strong>
+
+            <strong class="price">
+              1 000 - 2 000 FCFA
+            </strong>
+
+            <button
+              type="button"
+              class="order-button"
+              data-service="Création d'affiches"
+            >
+              COMMANDER
+            </button>
+
           </article>
 
+
+          <!-- SITES WEB -->
           <article class="service-card">
+
             <div class="service-icon">🌐</div>
+
             <h3>Création de sites web</h3>
+
             <p>
-              Création de sites web modernes, responsives et adaptés
-              aux besoins des particuliers, entreprises et projets.
+              Création de sites web modernes, responsives,
+              professionnels et adaptés à vos besoins.
             </p>
-            <strong>40 000 - 60 000 FCFA</strong>
+
+            <strong class="price">
+              40 000 - 60 000 FCFA
+            </strong>
+
+            <button
+              type="button"
+              class="order-button"
+              data-service="Création de sites web"
+            >
+              COMMANDER
+            </button>
+
           </article>
 
+
+          <!-- SERVEURS -->
           <article class="service-card">
+
             <div class="service-icon">🖥️</div>
+
             <h3>Création de serveurs</h3>
+
             <p>
-              Mise en place et configuration de différents types de
-              serveurs selon les besoins de votre projet.
+              Installation et configuration de différents types
+              de serveurs pour vos projets numériques.
             </p>
-            <strong>30 000 - 50 000 FCFA</strong>
+
+            <strong class="price">
+              30 000 - 50 000 FCFA
+            </strong>
+
+            <button
+              type="button"
+              class="order-button"
+              data-service="Création de serveurs"
+            >
+              COMMANDER
+            </button>
+
           </article>
 
+
+          <!-- MAINTENANCE -->
           <article class="service-card">
+
             <div class="service-icon">🔧</div>
+
             <h3>Maintenance logicielle</h3>
+
             <p>
-              Correction de problèmes, maintenance, optimisation et
-              amélioration de vos logiciels et applications.
+              Correction des problèmes, maintenance,
+              optimisation et amélioration de vos logiciels.
             </p>
-            <strong>5 000 - 10 000 FCFA</strong>
+
+            <strong class="price">
+              5 000 - 10 000 FCFA
+            </strong>
+
+            <button
+              type="button"
+              class="order-button"
+              data-service="Maintenance logicielle"
+            >
+              COMMANDER
+            </button>
+
           </article>
 
         </div>
+
       </div>
+
     </section>
 
 
-    <!-- FORMULAIRE -->
+    <!-- =========================
+         FORMULAIRE DE COMMANDE
+    ========================== -->
     <section id="commande" class="contact-section">
+
       <div class="container">
 
         <div class="form-card">
 
-          <h2>Demander un service</h2>
+          <h2>Commander un service</h2>
 
           <p class="form-intro">
-            Décrivez votre projet. Après validation, vous serez redirigé
-            vers WhatsApp pour envoyer votre demande à Steve Digital.
+            Sélectionnez un service et décrivez votre projet.
+            Votre demande sera ensuite envoyée directement sur WhatsApp.
           </p>
+
 
           <form id="serviceForm">
 
+            <!-- SERVICE -->
             <div class="form-group">
+
               <label for="service">
                 Nom du service
               </label>
 
-              <select id="service" name="service" required>
-                <option value="">-- Choisissez un service --</option>
+              <select
+                id="service"
+                name="service"
+                required
+              >
+
+                <option value="">
+                  -- Choisissez un service --
+                </option>
+
                 <option value="Création d'affiches">
                   Création d'affiches — 1 000 à 2 000 FCFA
                 </option>
+
                 <option value="Création de sites web">
                   Création de sites web — 40 000 à 60 000 FCFA
                 </option>
+
                 <option value="Création de serveurs">
                   Création de serveurs — 30 000 à 50 000 FCFA
                 </option>
+
                 <option value="Maintenance logicielle">
                   Maintenance logicielle — 5 000 à 10 000 FCFA
                 </option>
+
               </select>
+
             </div>
 
 
+            <!-- DESCRIPTION -->
             <div class="form-group">
+
               <label for="description">
                 Description du projet
               </label>
@@ -131,14 +233,19 @@
                 id="description"
                 name="description"
                 rows="7"
-                placeholder="Décrivez votre projet, vos besoins, les fonctionnalités souhaitées, les informations importantes..."
+                placeholder="Décrivez votre projet et vos besoins..."
                 required
               ></textarea>
+
             </div>
 
 
-            <button type="submit" class="whatsapp-button">
-              📱 Valider et envoyer sur WhatsApp
+            <!-- BOUTON WHATSAPP -->
+            <button
+              type="submit"
+              class="whatsapp-button"
+            >
+              📱 VALIDER ET ENVOYER SUR WHATSAPP
             </button>
 
           </form>
@@ -146,17 +253,22 @@
         </div>
 
       </div>
+
     </section>
 
 
-    <!-- CONTACT -->
+    <!-- =========================
+         CONTACT
+    ========================== -->
     <section class="contact-info">
+
       <div class="container">
 
-        <h2>Contact</h2>
+        <h2>Contactez Steve Digital</h2>
 
         <p>
-          Vous pouvez également nous contacter directement sur WhatsApp.
+          Une question ou un projet ?
+          Contactez-nous directement sur WhatsApp.
         </p>
 
         <a
@@ -165,76 +277,196 @@
           rel="noopener noreferrer"
           class="whatsapp-link"
         >
-          💬 Contacter Steve Digital sur WhatsApp
+          💬 WhatsApp : 677 045 4567
         </a>
 
       </div>
+
     </section>
 
   </main>
 
 
+  <!-- =========================
+       FOOTER
+  ========================== -->
   <footer>
+
     <div class="container">
+
       <p>
-        © <span id="year"></span> Steve Digital — Tous droits réservés.
+        © <span id="year"></span> Steve Digital.
+        Tous droits réservés.
       </p>
+
     </div>
+
   </footer>
 
 
+  <!-- =========================
+       JAVASCRIPT
+  ========================== -->
   <script>
-    // Année automatique
+
+    /*
+     * Année automatique
+     */
     document.getElementById("year").textContent =
       new Date().getFullYear();
 
 
-    // Formulaire WhatsApp
-    document.getElementById("serviceForm").addEventListener("submit", function(event) {
+    /*
+     * Boutons COMMANDER
+     *
+     * Chaque bouton récupère le service
+     * puis ouvre le formulaire.
+     */
+    const orderButtons =
+      document.querySelectorAll(".order-button");
 
-      event.preventDefault();
+    const serviceSelect =
+      document.getElementById("service");
 
-      const service = document.getElementById("service").value.trim();
-      const description = document.getElementById("description").value.trim();
+    const commandeSection =
+      document.getElementById("commande");
 
-      if (!service || !description) {
-        alert("Veuillez sélectionner un service et décrire votre projet.");
-        return;
-      }
 
-      const message =
-`Bonjour Steve Digital 👋
+    orderButtons.forEach(function(button) {
 
-Je souhaite demander un service.
+      button.addEventListener("click", function() {
 
-🔹 Service demandé :
-${service}
+        const selectedService =
+          button.getAttribute("data-service");
 
-🔹 Description de mon projet :
-${description}
+        /*
+         * Sélection automatique du service
+         */
+        serviceSelect.value = selectedService;
 
-Merci de me communiquer les informations nécessaires concernant la réalisation de mon projet.`;
+        /*
+         * Défilement vers le formulaire
+         */
+        commandeSection.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
 
-      const whatsappUrl =
-        "https://wa.me/2376770454567?text=" +
-        encodeURIComponent(message);
+      });
 
-      window.location.href = whatsappUrl;
     });
 
 
-    // Enregistrement du Service Worker pour la PWA
-    if ("serviceWorker" in navigator) {
-      window.addEventListener("load", function() {
-        navigator.serviceWorker.register("/sw.js")
-          .then(function() {
-            console.log("Service Worker enregistré.");
-          })
-          .catch(function(error) {
-            console.log("Erreur Service Worker :", error);
-          });
+    /*
+     * Envoi de la commande vers WhatsApp
+     */
+    document
+      .getElementById("serviceForm")
+      .addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        const service =
+          document.getElementById("service").value.trim();
+
+        const description =
+          document
+            .getElementById("description")
+            .value
+            .trim();
+
+
+        /*
+         * Vérification
+         */
+        if (!service) {
+
+          alert(
+            "Veuillez choisir un service."
+          );
+
+          return;
+        }
+
+
+        if (!description) {
+
+          alert(
+            "Veuillez décrire votre projet."
+          );
+
+          return;
+        }
+
+
+        /*
+         * Message WhatsApp
+         */
+        const message =
+`Bonjour Steve Digital 👋
+
+Je souhaite commander un service.
+
+🔹 SERVICE :
+${service}
+
+🔹 DESCRIPTION DU PROJET :
+${description}
+
+Merci de me contacter pour discuter de mon projet et des modalités de réalisation.`;
+
+
+        /*
+         * Numéro WhatsApp
+         *
+         * 237 = Cameroun
+         */
+        const whatsappUrl =
+          "https://wa.me/2376770454567?text=" +
+          encodeURIComponent(message);
+
+
+        /*
+         * Ouverture de WhatsApp
+         */
+        window.location.href =
+          whatsappUrl;
+
       });
+
+
+    /*
+     * Service Worker PWA
+     */
+    if ("serviceWorker" in navigator) {
+
+      window.addEventListener(
+        "load",
+        function() {
+
+          navigator.serviceWorker
+            .register("/sw.js")
+            .then(function() {
+
+              console.log(
+                "Steve Digital : Service Worker actif."
+              );
+
+            })
+            .catch(function(error) {
+
+              console.log(
+                "Erreur Service Worker :",
+                error
+              );
+
+            });
+
+        }
+      );
+
     }
+
   </script>
 
 </body>
